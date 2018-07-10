@@ -88,31 +88,34 @@ hibernate:
         queries: false
         use_second_level_cache: false
         use_query_cache: false
-dataSource:
-    pooled: true
-    jmxExport: true
-    driverClassName: com.mysql.jdbc.Driver
-    username: vwajnlgepcjedory
-    password: khenh6ommyv0br25
 
 environments:
     development:
         dataSource:
+            pooled: true
+            jmxExport: true
+            driverClassName: com.mysql.jdbc.Driver
             dbCreate: update
-            username: vwajnlgepcjedory
-            password: khenh6ommyv0br25
-            url: 'jdbc:mysql://ko86t9azcob3a2f9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/t2b3hstxwgenewur'
+            username: root
+            password: root
+            url: 'jdbc:mysql://localhost:3306/chat'
     test:
         dataSource:
+            pooled: true
+            jmxExport: true
+            driverClassName: com.mysql.jdbc.Driver
             dbCreate: update
             username: root
             password: root
             url: 'jdbc:mysql://localhost:3306/chat'
     production:
         dataSource:
+            pooled: true
+            jmxExport: true
+            driverClassName: com.mysql.jdbc.Driver
             dbCreate: update
-            username: root
-            password: root
+            username: vwajnlgepcjedory
+            password: khenh6ommyv0br25
             url: 'jdbc:mysql://localhost:3306/chat'
             properties:
                 jmxEnabled: true
