@@ -1,0 +1,144 @@
+
+
+
+/* 
+	=========================================== DESKTOP < 1200px ====
+*/
+@media only screen and (max-width: 1200px) {
+	
+
+}
+
+
+
+/* 
+	============================================= IPAD LANDSCAPE ====
+*/
+
+@media only screen and  (max-width: 1183px) {
+
+}
+
+
+/* 
+	============================================== IPAD PORTRAIT ====
+*/
+@media only screen and  (max-width: 989px) {
+	
+	.textoSlide { left: 40%; }
+	
+}	
+
+
+@media only screen and (max-width: 780px) {
+
+	
+	.navbar-toggle { margin-top: 0px; }
+	.navbar-collapse { border: none!important; }
+	.collapse ul { border: none!important; }
+	
+	nav {margin-top:200px; 	font-family: 'Abel', sans-serif; background: none!important; border: none!important;}
+
+.navbar	{margin-bottom:-10px;} 
+	
+
+nav li a:link {margin-top:10px; font-weight: 700; text-decoration: none; text-transform: uppercase; font-size: 16px; padding-top: 5px; height:25px; color: black!important; margin-bottom: 0px;}
+
+nav li a:visited { color: grey!important; }
+nav li a:active { height:45px; background-color:  #00000!important; }
+nav li a:hover { color: black!important;  }
+nav li ul { border: none!important; background-color: #CCC!important; }
+
+ul.navbar-nav li.active {
+    margin-top: 0px; height:45px; background-color:#ffd6cc; padding:0px;
+}
+	
+	
+	
+	
+	
+	
+	.royalSlider { min-height: 125px;}
+	.textoSlide { padding-top: 100px; left: 20%; }
+	.mobileOFF { display: none!important; }
+	.mobileON { display: block; }
+	
+		.borde {height:auto;}
+	.borde1 {height:auto;}
+	
+}
+
+
+
+
+/* 
+	=========================================== IPHONE LANDSCAPE ====
+*/
+@media handheld, only screen and (max-width: 550px) {
+	
+	nav { background-color: white!important; height: auto; padding-bottom: 15px;  }
+	.royalSlider { height: 150px; width:100%}
+	.textoSlide { padding-top: 20px; left: 35%; font-size: 18px; line-height: 27px; }
+	.glyphicon {font-size:15px;}
+	.rsBullets {display: none;} 
+	.frase {color:#ffd6cc; font-size: 15px;}
+	em {font-size: 10px;}
+	
+	
+	.fondo_gris { background-color: #f2f2f2; height: 125px; }
+	.fondo_gris1 { background-color: #f2f2f2; height: 65px; }
+	
+	
+
+	
+	
+	.encabezados { height: 250px; padding-top: 130px; }
+	.encabezados h3 { font-size: 25px; line-height: 27px; }
+
+
+	
+	.borde {height:auto;}
+	.borde1 {height:auto;}
+	
+	
+	
+	
+
+}
+
+
+
+/* 
+	============================================ IPHONE PORTRAIT ====
+*/
+@media only screen and (max-width: 320px) {	
+	.borde {height:auto;}
+	.borde1 {height:auto;}
+	nav { background-color: white!important; height: auto; padding-bottom: 15px;  }
+	.royalSlider { height: 150px; width:100%}
+	.textoSlide { padding-top: 20px; left: 35%; font-size: 18px; line-height: 27px; }
+	.glyphicon {font-size:15px;}
+	.rsBullets {display: none;} 
+	.frase {color:#ffd6cc; font-size: 15px;}
+	em {font-size: 10px;}
+	
+	
+	.fondo_gris { background-color: #f2f2f2; height: 125px; }
+	.fondo_gris1 { background-color: #f2f2f2; height: 65px; }
+	
+	
+}
+
+
+
+/* 
+	============================================ SO SMALL PHONES ====
+*/
+@media handheld, only screen and (max-width: 240px) {
+	
+
+	
+
+
+
+}
