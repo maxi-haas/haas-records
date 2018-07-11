@@ -141,6 +141,10 @@ class UrlMappings {
             action = [GET: "github"]
         }
 
+        "/mail"(controller: 'index'){
+            action = [POST: "mail"]
+        }
+
 
         "500"(view:'/error')
         "404"(view:'/notFound')

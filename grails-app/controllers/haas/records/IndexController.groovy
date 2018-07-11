@@ -1,5 +1,7 @@
 package haas.records
 
+import grails.converters.JSON
+
 class IndexController {
     ArtistService artistService
     ReleaseService releaseService
@@ -51,5 +53,21 @@ class IndexController {
         log.github += 1
         log.save(flush: true, failOnError: true)
         redirect(url: "https://github.com/jnvillar?count=${log.github}")
+    }
+
+    def mail(){
+        sendMail {
+            to "juaninolivillar@gmail.com"
+            subject "Haas-Records Contact"
+            text    "Consulta de ${params.name} \n" +
+                    "Categoria de ${params.category} \n" +
+                    "País: ${params.country} \n" +
+                    "Telefono: ${params.phone} \n" +
+                    "Email: ${params.email} \n \n" +
+                    "Mensaje: ${params.mensaje} \n"
+
+        }
+
+        redirect(uri: "/")
     }
 }

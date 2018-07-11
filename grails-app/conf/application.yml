@@ -28,6 +28,16 @@ endpoints:
 
 ---
 grails:
+    mail:
+        host: "smtp.gmail.com"
+        port: 465
+        username: ${mailserver_user}
+        password: ${mailserver_pass}
+        props:
+            mail.smtp.auth: "true"
+            mail.smtp.socketFactory.port: "465"
+            mail.smtp.socketFactory.class: "javax.net.ssl.SSLSocketFactory"
+            mail.smtp.socketFactory.fallback: "false"
     mime:
         disable:
             accept:
@@ -98,7 +108,7 @@ environments:
             dbCreate: update
             username: root
             password: root
-            url: 'jdbc:mysql://localhost:3306/hass-records'
+            url: 'jdbc:mysql://localhost:3306/hass_records'
     test:
         dataSource:
             pooled: true
@@ -107,7 +117,7 @@ environments:
             dbCreate: update
             username: root
             password: root
-            url: 'jdbc:mysql://localhost:3306/hass-records'
+            url: 'jdbc:mysql://localhost:3306/hass_records'
     production:
         dataSource:
             pooled: true
