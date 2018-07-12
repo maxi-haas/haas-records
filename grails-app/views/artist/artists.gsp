@@ -20,7 +20,7 @@
                 <div class="borde" style="min-height: 440px; max-height: 440px">
                     <div class="artistas">
                         <a href="../artists/${artist.id}">
-                            <img class="img-responsive" style="max-height: 300px" src="${artist.picture}">
+                            <img class="img-responsive" style="max-width: 261px; min-width: 261px; max-height: 307px; min-height: 307px" src="${artist.picture}">
                         </a>
                         <h3 style="text-align: center;">${artist.name.toUpperCase()}</h3>
                         <g:if test="${session.user}">
@@ -30,7 +30,7 @@
                                 </a>
                             </span>
                             <span>
-                                <a  onclick='sure("¿Seguro? Se borrarn todos los albumnes y canciones del artista","../artists/delete/${artist.id}")'>
+                                <a  onclick='sure("¿Seguro? Se borraran todos los albumnes y canciones del artista","../artists/delete/${artist.id}")'>
                                     <i class="fas fa-trash" style="color: black; font-size: 20px"></i>
                                 </a>
                             </span>

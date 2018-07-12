@@ -1,7 +1,5 @@
 package haas.records
 
-import grails.converters.JSON
-
 class IndexController {
     ArtistService artistService
     ReleaseService releaseService
@@ -10,9 +8,9 @@ class IndexController {
 
     def home() {
         def artist = artistService.getLast()
-        def press = pressService.getLast()
+        def press = pressService.getLast().reverse()
         def release = releaseService.getLast()
-        def podcasts = podcastService.getLast()
+        def podcasts = podcastService.getLast().reverse()
 
         render(view: "index", model: [artist: artist, press: press, release: release, podcasts: podcasts, selected: "home"])
     }

@@ -57,7 +57,8 @@
                         <g:each var="news" in="${press}">
                             <h3 style="text-align: left; color: #ffd6cc;">
                                 <i class="glyphicon glyphicon-play"></i>
-                                ${news.title}
+                                ${news.title} <br>
+                                ${news.subTitle}
                             </h3>
 
                             <p>${news.description.length() < 210 ? news.description : news.description[0..209]}</p>

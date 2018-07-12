@@ -226,7 +226,7 @@
 
             <g:if test="${haas.records.Carousel.findById(1)}">
                 <div class="fws-text container">
-                    <div class="rsABlock textoSlide" style="color: white">
+                    <div class="rsABlock textoSlide" style="color: black">
                         <strong>${haas.records.Carousel.findById(1).text_two}</strong><br/>
                         <a href="${haas.records.Carousel.findById(1).link_two}">
                             <span class="frase"> ${haas.records.Carousel.findById(1).subtitle_two}

@@ -16,7 +16,7 @@
     <div class="row">
         <g:each var="event" in="${events}">
             <div class="col-md-6 col-lg-6">
-                <img class="img-responsive" src="${event.picture}"/>
+                <img class="img-responsive" style="max-height: 470px; max-width: 470px; min-height: 470px; min-width: 470px" src="${event.picture}"/>
 
                 <div class="fondo_events">
                     <h2>${event.title}
@@ -38,7 +38,10 @@
 
                     <h2><strong>${event.subtitle}</strong></h2>
 
-                    <h2><strong>${event.date.format("dd.MMMM.yy")}</strong></h2>
+                    <h2><strong>${
+                        event.date.format("dd.MMMM.yy").tokenize('.')[0] + "." + event.date.format("dd.MMMM.yy").tokenize('.')[1].toUpperCase() + "." + event.date.format("dd.MMMM.yy").tokenize('.')[2]
+
+                    }</strong></h2>
                     <br/>
 
                     <p>${event.description}</p><br/>

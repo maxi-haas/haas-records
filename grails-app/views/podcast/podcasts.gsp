@@ -16,8 +16,8 @@
 
         <g:each var="podcast" in="${podcasts}">
             <div class="col-md-6 col-lg-6">
-                <div class="borde">
-                    <h3 style="text-align: left; margin-top: 0px; text-transform: uppercase;"><strong>${podcast.title}<br/></strong><br/>${podcast.artist.name}
+                <div class="borde" style="min-height: 291px; max-height: 291px">
+                    <h3 style="text-align: left; margin-top: 0px; text-transform: uppercase;"><strong>${podcast.title}<br></strong>${podcast.artist.name}
 
                         <g:if test="${session.user}">
                             <span>

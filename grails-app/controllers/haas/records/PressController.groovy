@@ -6,7 +6,7 @@ class PressController {
     PressService pressService
 
     def press() {
-        List<Press> press = pressService.getAll()
+        List<Press> press = pressService.getAll().sort{-it.id}
         render(view: "press", model: [selected: "press", press: press])
     }
 
