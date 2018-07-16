@@ -44,6 +44,6 @@ class PodcastService {
 
     def getLast() {
         List<Podcast> podcasts = Podcast.findAll().sort { it.id }
-        podcasts.size() > 1 ? podcasts[-2..-1] : []
+        podcasts.size() > 1 ? podcasts[-2..-1] : podcasts
     }
 }
