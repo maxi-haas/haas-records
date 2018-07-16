@@ -20,7 +20,7 @@
                 <div class="borde" style="min-height: 440px; max-height: 440px">
                     <div class="artistas">
                         <a href="../artists/${artist.id}">
-                            <img class="img-responsive" style="max-width: 261px; min-width: 261px; max-height: 307px; min-height: 307px" src="${artist.picture}">
+                            <img class="img-responsive" style="height: 10%" src="${artist.picture}">
                         </a>
                         <h3 style="text-align: center;">${artist.name.toUpperCase()}</h3>
                         <g:if test="${session.user}">
@@ -39,52 +39,6 @@
                 </div>
             </div>
         </g:each>
-
-        <div class="col-md-4 col-lg-4">
-            <div class="borde" style="min-height: 440px; max-height: 440px">
-                <div class="artistas">
-                    <a href="../maximilianohaas">
-                        <g:img class="img-responsive" dir="images" file="artistas/maximilianohaas.jpg"/>
-                    </a>
-                    <h3 style="text-align: center;">MAXIMILIANO HAAS</h3>
-                    <g:if test="${session.user}">
-                        <span>
-                            <a href="">
-                                <i class="fas fa-edit" style="color: black; font-size: 20px"></i>
-                            </a>
-                        </span>
-                        <span>
-                            <a>
-                                <i class="fas fa-trash" style="color: black; font-size: 20px"></i>
-                            </a>
-                        </span>
-                    </g:if>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-4">
-            <div class="borde" style="min-height: 440px; max-height: 440px">
-                <div class="artistas">
-                    <a href="../artist_int">
-                        <g:img class="img-responsive" dir="images" file="artistas/juniorgee.jpg"/>
-                    </a>
-                    <h3 style="text-align: center;">JUNIOR GEE</h3>
-                    <g:if test="${session.user}">
-                        <span>
-                        <a href="">
-                            <i class="fas fa-edit" style="color: black; font-size: 20px"></i>
-                        </a>
-                        </span>
-                        <span>
-                            <a>
-                                <i class="fas fa-trash" style="color: black; font-size: 20px"></i>
-                            </a>
-                        </span>
-                    </g:if>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 

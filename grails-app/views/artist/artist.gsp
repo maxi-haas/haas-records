@@ -59,15 +59,17 @@
         </div>
     </div>
 
+    <g:set var="maximiliano" value="${haas.records.Artist.findById(1)}"/>
 
     <div class="row">
         <div class="artista_int">
             <div class="col-md-3 col-lg-3">
                 <div class="borde">
                     <div class="artistas">
-                        <a href="../maximilianohaas">
-                            <g:img class="img-responsive" dir="images" file="artistas/maximilianohaas_int.jpg"/>
-                            <h3 style="text-align: center;">MAXIMILIANO HAAS</h3>
+                        <a href="../artists/1">
+                            <img class="img-responsive" src="${maximiliano.picture}">
+                        </a>
+                            <h3 style="text-align: center;">${maximiliano.name.toUpperCase()}</h3>
                     </div>
                 </div>
             </div>

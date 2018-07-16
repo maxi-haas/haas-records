@@ -178,29 +178,46 @@
 
 <div class="container">
 
-    <div id="full-width-slider" class="royalSlider rsMinW">
-        <div class="rsContent">
-            <g:if test="${haas.records.Carousel.findById(1)}">
-                <img class="img-responsive" src="${haas.records.Carousel.findById(1).img_one}">
-            </g:if>
-            <g:else>
-                <g:img class="rsImg" dir="images" file="banner/slider1.jpg"/>
-            </g:else>
+    <g:set var="carousel" value="${haas.records.Carousel.findById(1)}"/>
 
-            <g:if test="${haas.records.Carousel.findById(1)}">
+    <div id="full-width-slider" class="royalSlider rsMinW">
+
+        <g:if test="${carousel}">
+            <div class="rsContent">
+                <img class="rsImg" src="${carousel.img_one}">
+
                 <div class="fws-text container">
                     <div class="rsABlock textoSlide" style="color: white">
-                        <strong>${haas.records.Carousel.findById(1).text_one}</strong><br/>
-                        <a href="${haas.records.Carousel.findById(1).link_one}">
-                            <span class="frase">${haas.records.Carousel.findById(1).subtitle_one}
+                        <strong>${carousel.text_one}</strong><br/>
+                        <a href="${carousel.link_one}">
+                            <span class="frase">${carousel.subtitle_one}
                                 <i class="glyphicon glyphicon-play"></i>
                             </span>
                         </a>
                     </div>
                 </div>
-            </g:if>
+            </div>
 
-            <g:else>
+            <div class="rsContent">
+                <img class="rsImg" src="${carousel.img_two}">
+
+                <div class="fws-text container">
+                    <div class="rsABlock textoSlide" style="color: black">
+                        <strong>${carousel.text_two}</strong><br/>
+                        <a href="${carousel.link_two}">
+                            <span class="frase">${carousel.subtitle_two}
+                                <i class="glyphicon glyphicon-play"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </g:if>
+        <g:else>
+
+            <div class="rsContent">
+                <g:img class="rsImg" dir="images" file="banner/slider1.jpg"/>
                 <div class="fws-text container">
                     <div class="rsABlock textoSlide" style="color: white">
                         MAXIMILIANO <strong>HAAS</strong><br/>
@@ -212,31 +229,11 @@
                         </a>
                     </div>
                 </div>
-            </g:else>
-        </div>
+            </div>
 
-        <div class="rsContent">
-            <g:if test="${haas.records.Carousel.findById(1)}">
-                <img class="img-responsive" src="${haas.records.Carousel.findById(1).img_two}">
-            </g:if>
-            <g:else>
+
+            <div class="rsContent">
                 <g:img class="rsImg" dir="images" file="banner/slider2.jpg"/>
-            </g:else>
-
-
-            <g:if test="${haas.records.Carousel.findById(1)}">
-                <div class="fws-text container">
-                    <div class="rsABlock textoSlide" style="color: black">
-                        <strong>${haas.records.Carousel.findById(1).text_two}</strong><br/>
-                        <a href="${haas.records.Carousel.findById(1).link_two}">
-                            <span class="frase"> ${haas.records.Carousel.findById(1).subtitle_two}
-                                <i class="glyphicon glyphicon-play"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </g:if>
-            <g:else>
                 <div class="fws-text container">
                     <div class="rsABlock textoSlide" style="color: black">
                         MAXIMILIANO <strong>HAAS</strong><br/>
@@ -248,8 +245,9 @@
                         </a>
                     </div>
                 </div>
-            </g:else>
-        </div>
+
+            </div>
+        </g:else>
     </div>
 
 </div>
