@@ -63,7 +63,7 @@ class ArtistService {
 
     def getLast() {
         List<Artist> artists = Artist.findAllByHidden(false).sort { it.id }
-        artists ? artists.last() : []
+        artists ? artists.last() : [:]
     }
 
     def getOrCreateByName(name) {

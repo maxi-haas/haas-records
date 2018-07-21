@@ -59,17 +59,16 @@
         </div>
     </div>
 
-    <g:set var="maximiliano" value="${haas.records.Artist.findById(1)}"/>
-
+    
     <div class="row">
         <div class="artista_int">
             <div class="col-md-3 col-lg-3">
                 <div class="borde">
                     <div class="artistas">
-                        <a href="../artists/1">
-                            <img class="img-responsive" src="${maximiliano.picture}">
+                        <a href="../artists/${lastArtist.id}">
+                            <img class="img-responsive" src="${lastArtist.picture}">
                         </a>
-                            <h3 style="text-align: center;">${maximiliano.name.toUpperCase()}</h3>
+                            <h3 style="text-align: center;">${lastArtist.name.toUpperCase()}</h3>
                     </div>
                 </div>
             </div>

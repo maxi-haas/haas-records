@@ -31,7 +31,8 @@ class ArtistController {
 
     def show(){
         Artist artist = artistService.get(params.id as Long)
-        render(view: "artist", model: [selected: "artists", artist:artist])
+        def lastArtist = artistService.getLast()
+        render(view: "artist", model: [selected: "artists", artist:artist, lastArtist:lastArtist])
     }
 
     def delete(){
