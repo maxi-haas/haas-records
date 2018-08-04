@@ -20,7 +20,7 @@
                 <div class="borde" style="min-height: 440px; max-height: 440px">
                     <div class="artistas">
                         <a href="../artists/${artist.id}">
-                            <img class="img-responsive" style="height: 10%" src="${artist.picture}">
+                            <img class="img-responsive" style="height: 10%; max-height: 325px" src="${artist.picture}">
                         </a>
                         <h3 style="text-align: center;">${artist.name.toUpperCase()}</h3>
                         <g:if test="${session.user}">
