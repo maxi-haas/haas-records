@@ -14,7 +14,7 @@
     </div>
 
     <div class="row">
-        <g:each var="event" in="${events}">
+        <g:each var="event" in="${events.reverse()}">
             <div class="col-md-6 col-lg-6">
                 <img class="img-responsive" style="max-height: 470px; max-width: 470px; min-height: 470px; min-width: 470px" src="${event.picture}"/>
 
