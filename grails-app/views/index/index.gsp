@@ -91,7 +91,7 @@
                 <div class="artistas">
                     <g:if test="${release}">
                         <h3 style="text-align: left; text-transform: uppercase;"><strong>${release.artist.name.toUpperCase()}</strong><br/>
-                            TOO LATE EP</h3>
+                            LET YOU KNOW EP</h3>
                         <img class="img-responsive" src="${release.picture}">
                         <br/>
                     </g:if>
